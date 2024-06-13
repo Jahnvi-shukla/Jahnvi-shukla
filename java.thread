@@ -1,0 +1,11 @@
+class thread1 extends Thread{
+  void run(){
+    System.out.println("calling thread run " +Thread.currentThread().getName());
+  }
+  class threadcalling{
+    public static void main(String[] args){
+      Thread t1=new Thread();
+      t1.run();
+    }
+  }
+}
